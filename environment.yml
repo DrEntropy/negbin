@@ -1,0 +1,17 @@
+name: nutpie
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python >= 3.11
+  - scikit-learn
+  - pandas
+  - numpy
+  - matplotlib
+  - jupyter
+  - seaborn
+  - statsmodels
+  - numba
+  - bambi
+  - pip
+  - nutpie
