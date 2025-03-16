@@ -1,0 +1,32 @@
+Sampling small dataset:
+Elapsed time (small dataset): 26.7849475 seconds
+
+Sampling large dataset:
+Elapsed time (large dataset): 77.8399494 seconds
+
+Sampling zero-truncated dataset:
+Elapsed time (zero-truncated dataset): 48.4038652 seconds
+
+Chain summary (small dataset):
+2×8 DataFrame
+ Row │ parameters  mean      std        mcse         ess_bulk  ess_tail  rhat     ess_per_sec
+     │ Symbol      Float64   Float64    Float64      Float64   Float64   Float64  Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────
+   1 │ mu          2.68983   0.0382934  0.000620405   3823.04   2607.2   1.00054      85.9477
+   2 │ alpha       0.602972  0.0119154  0.000189977   3952.38   2550.29  1.00072      88.8555
+
+Chain summary (large dataset):
+2×8 DataFrame
+ Row │ parameters  mean      std         mcse        ess_bulk  ess_tail  rhat     ess_per_sec
+     │ Symbol      Float64   Float64     Float64     Float64   Float64   Float64  Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────
+   1 │ mu          2.70068   0.00853137  0.00014112   3659.2    2296.04  1.00188      11.9417
+   2 │ alpha       0.601016  0.00269132  4.54775e-5   3500.89   3043.55  1.00036      11.425
+
+Chain summary (zero-truncated dataset):
+2×8 DataFrame
+ Row │ parameters  mean      std        mcse         ess_bulk  ess_tail  rhat     ess_per_sec
+     │ Symbol      Float64   Float64    Float64      Float64   Float64   Float64  Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────
+   1 │ mu          2.64761   0.0464883  0.00144376    1039.06   1155.47  1.0044       6.35852
+   2 │ alpha       0.572457  0.0195895  0.000607854   1043.4    1140.95  1.00562      6.38506
